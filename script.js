@@ -25,9 +25,12 @@ list.addEventListener('dblclick', e => {
     e.target.remove();
   }
 
+
+
 });
 
 // commit 1
 // commit 2
+
 // commit 3
 
