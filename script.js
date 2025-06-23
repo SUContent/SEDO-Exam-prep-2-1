@@ -24,4 +24,10 @@ list.addEventListener('dblclick', e => {
   if (e.target.tagName === 'LI') {
     e.target.remove();
   }
+
 });
+
+
+// commit 1
+// commit 2
+
