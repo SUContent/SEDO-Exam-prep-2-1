@@ -27,11 +27,7 @@ list.addEventListener('dblclick', e => {
 
 });
 
-// comm 1 comment
-// commit 2 comment
-// commit 3 comment
-
-
-});
-
+// commit 1
+// commit 2
+// commit 3
 
