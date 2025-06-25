@@ -9,11 +9,13 @@ function $(sel) { return document.querySelector(sel); }
 function $all(sel) { return Array.from(document.querySelectorAll(sel)); }
 
 
+
 // Test commit 1
 // Add task
 $(refs.addBtn).addEventListener('click', () => {
   const text = $(refs.input).value.trim();
   if (!text) return alert('Cannot add an empty task');
+
 
 // Commit test 1
 addBtn.addEventListener('click', () => {
@@ -29,8 +31,10 @@ addBtn.addEventListener('click', () => {
 });
 
 
+
 // Delegate toggles & deletes
 $(refs.list).addEventListener('click', e => {
+
 // Commit test 2
 // Toggle complete
 list.addEventListener('click', e => {
