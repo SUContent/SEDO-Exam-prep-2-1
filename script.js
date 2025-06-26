@@ -1,27 +1,30 @@
-// Base functionality: add task, toggle complete, delete on double-click
+function add(a, b) {
+  return a + b;
+}
 
-const input = document.getElementById('task-input');
-const addBtn = document.getElementById('add-btn');
-const list = document.getElementById('task-list');
+function subtract(a, b) {
+  return a - b;
+}
 
-addBtn.addEventListener('click', () => {
-  const text = input.value;
-  const li = document.createElement('li');
-  li.textContent = text;
-  list.appendChild(li);
-  input.value = '';
-});
+function multiply(a, b) {
+  return a * b;
+}
 
-// Toggle complete
-list.addEventListener('click', e => {
-  if (e.target.tagName === 'LI') {
-    e.target.classList.toggle('completed');
+function calculateAndDisplay(fn) {
+  const rawA = document.getElementById('a').value;
+  const rawB = document.getElementById('b').value;
+
+  if (rawA === '' || rawB === '') {
+    document.getElementById('result').textContent = 'Please fill both inputs';
+    return;
   }
-});
 
-// Delete on double-click
-list.addEventListener('dblclick', e => {
-  if (e.target.tagName === 'LI') {
-    e.target.remove();
-  }
+  const a = Number(rawA);
+  const b = Number(rawB);
+  document.getElementById('result').textContent = fn(a, b);
+}
+
+['add', 'subtract', 'multiply'].forEach(op => {
+  document.getElementById(`btn-${op}`)
+    .addEventListener('click', () => calculateAndDisplay(window[op]));
 });
