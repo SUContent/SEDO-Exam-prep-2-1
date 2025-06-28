@@ -33,6 +33,3 @@ clearBtn.addEventListener('click', () => {
     .forEach(li => li.remove());
 });
 
-// Branch 2
-
-// Branch 3
