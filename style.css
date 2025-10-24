@@ -36,7 +36,12 @@ body {
   border-bottom: 1px solid #ddd;
   cursor: pointer;
 }
+
 #task-list li.completed {
   text-decoration: line-through;
   color: #888;
+}
+
+#div {
+  color: blue;
 }
