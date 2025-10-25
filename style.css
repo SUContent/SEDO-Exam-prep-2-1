@@ -26,7 +26,7 @@ body {
 }
 
 #task-list {
-  list-style: none;
+  list-style: none;    
   padding: 0;
   margin-top: 1em;
 }
@@ -39,4 +39,8 @@ body {
 #task-list li.completed {
   text-decoration: line-through;
   color: #888;
+}
+
+#div {
+    color: blue;
 }
