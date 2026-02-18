@@ -32,3 +32,5 @@ clearBtn.addEventListener('click', () => {
   document.querySelectorAll('#task-list li.completed')
     .forEach(li => li.remove());
 });
+
+// Branch 2
